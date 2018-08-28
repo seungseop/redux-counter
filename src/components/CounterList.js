@@ -25,11 +25,15 @@ const CounterList = ({counters, onIncrement, onDecrement, onSetColor}) => {
     );
 };
 
-counterList.propTypes = {
+CounterList.propTypes = {
     counters: PropTypes.arrayOf(PropTypes.shape({color: PropTypes.string, number:PropTypes.number})),
     onIncrement: PropTypes.func,
     onDecrement: PropTypes.func,
-    
+    onSetColor: PropTypes.func
 };
+
+CounterList.defaultProps = {
+    counters: []
+}
 
 export default CounterList;

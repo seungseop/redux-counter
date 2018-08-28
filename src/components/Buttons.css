@@ -19,6 +19,10 @@
 }
 
 .Buttons .add:hover {
+    background: #40c057;
+}
+
+.Buttons .remove {
     background: #f03e3e;
 }
 
